@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+}
+
+.box{
+    background-color: #e9c46a;
+    padding: 2vw;
+    /* height: 10vw; */
+    width: 50vw;
+    border-radius: 5vw;
+    box-shadow: 0px 0px 10px 0.5px black;
+    border: 3px solid #f4a261; 
+}
+
+h1{
+    color: #264653;
+    text-shadow: 2px 2px 4px #e9c46a;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#yes{
+    margin-left: 14vw;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #2E7D32; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#yes:hover {
+    background-color: #66BB6A;
+    transform: scale(1.1);
+}
+
+#yes,#no{
+    padding: 1.5vw;
+    font-size: 2.5vw;
+    width: 10vw;
+}
+#no{
+    position: absolute;
+    background-color: #FF5252;
+    color: white;
+    border: 2px solid #E53935;
+    margin-left: 1vw;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#no:hover {
+    background-color: #FF867F;
+    transform: scale(1.1);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 5vw;
+    font-size: 2.5vw;
+    color: #264653;
+}
+
+@media (max-width:768px){
+    .box{
+        padding: 2vw;
+        width: 80vw;
+        border-radius: 5vw;
+        box-shadow: 0px 0px 10px 0.5px black;
+        border: 3px solid #f4a261; 
+    }
+    
+    h1{
+        text-shadow: 2px 2px 4px #e9c46a;
+        font-size: 10vw;
+        text-align: center;
+    }
+    #yes{
+        margin-left: 25vw;
+        border: 2px solid #2E7D32; 
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #yes,#no{
+        padding: 3vw;
+        font-size:4vw;
+        font-weight: bold;
+        width: 15vw;
+    }
+    #no{
+        border: 2px solid #E53935;
+        margin-left: 1.5vw;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    h2{
+        text-align: center;
+        margin-bottom: 5vw;
+        font-size: 5vw;
+    }
+}
